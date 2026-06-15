@@ -1,0 +1,46 @@
+/* ============================================================
+   components.css — shared component-level styles not covered
+   by Tailwind utility classes.
+   ============================================================ */
+
+/* ---- Table ---- */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ---- Badge ---- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* ---- Card ---- */
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,.06);
+}
+.dark .card {
+  background: #111827;
+  border-color: #1f2937;
+}
+
+/* ---- Sidebar active link indicator ---- */
+.nav-active-indicator {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 60%;
+  border-radius: 0 2px 2px 0;
+  background: #6366f1;
+}

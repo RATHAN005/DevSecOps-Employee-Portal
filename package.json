@@ -1,0 +1,9 @@
+{
+  "name": "devsecops-employee-portal",
+  "version": "1.0.0",
+  "description": "DevSecOps Employee Portal monorepo",
+  "scripts": {
+    "dev:backend":  "npm run dev --prefix BackEnd",
+    "dev:frontend": "npm run dev --prefix Frontend"
+  }
+}
