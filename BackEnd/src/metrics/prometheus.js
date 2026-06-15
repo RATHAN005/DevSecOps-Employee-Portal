@@ -14,9 +14,8 @@ const httpRequestsTotal = new client.Counter({
 
 const httpRequestDuration = new client.Histogram({
   name: "employee_portal_http_request_duration_seconds",
-  help: "HTTP request duration",
+  help: "Request duration",
   labelNames: ["method", "route"],
-  buckets: [0.1, 0.5, 1, 2, 5],
 });
 
 register.registerMetric(httpRequestsTotal);

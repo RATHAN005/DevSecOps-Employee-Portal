@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "DevSecOps Employee Portal monorepo",
   "scripts": {
-    "dev:backend":  "npm run dev --prefix BackEnd",
+    "dev:backend": "npm run dev --prefix BackEnd",
     "dev:frontend": "npm run dev --prefix Frontend"
+  },
+  "dependencies": {
+    "prom-client": "^15.1.3"
   }
 }
