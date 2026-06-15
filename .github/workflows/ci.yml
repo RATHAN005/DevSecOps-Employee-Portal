@@ -116,3 +116,24 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Build Backend Image
+        run: |
+          docker build \
+          -t ghcr.io/${{ github.repository_owner }}/employee-backend:latest \
+          ./BackEnd
+
+      - name: Push Backend Image
+        run: |
+          docker push \
+          ghcr.io/${{ github.repository_owner }}/employee-backend:latest
+
+      - name: Build Frontend Image
+        run: |
+          docker build \
+          -t ghcr.io/${{ github.repository_owner }}/employee-frontend:latest \
+          ./Frontend
+
+      - name: Push Frontend Image
+        run: |
+          docker push \
+          ghcr.io/${{ github.repository_owner }}/employee-frontend:latest
