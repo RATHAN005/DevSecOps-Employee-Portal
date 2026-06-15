@@ -119,21 +119,21 @@ jobs:
       - name: Build Backend Image
         run: |
           docker build \
-          -t ghcr.io/${{ github.repository_owner }}/employee-backend:latest \
+          -t ghcr.io/rathan005/employee-backend:latest \
           ./BackEnd
 
       - name: Push Backend Image
         run: |
           docker push \
-          ghcr.io/${{ github.repository_owner }}/employee-backend:latest
+          ghcr.io/rathan005/employee-backend:latest
 
       - name: Build Frontend Image
         run: |
           docker build \
-          -t ghcr.io/${{ github.repository_owner }}/employee-frontend:latest \
+          -t ghcr.io/rathan005/employee-frontend:latest \
           ./Frontend
 
       - name: Push Frontend Image
         run: |
           docker push \
-          ghcr.io/${{ github.repository_owner }}/employee-frontend:latest
+          ghcr.io/rathan005/employee-frontend:latest
